@@ -8,5 +8,15 @@ class Curso(
     var quantidadeMaxAlunos: Int,
     var listaAlunosMatriculados: MutableList<Aluno>
 ) {
-    // TODO: 07/09/2021 Parte B
+    fun adicionarUmAluno(umAluno: Aluno): Boolean {
+        if(listaAlunosMatriculados.size < quantidadeMaxAlunos){
+            listaAlunosMatriculados.add(umAluno)
+            return true
+        }
+        return false
+    }
+
+    fun excluirAluno(umAluno: Aluno){
+        listaAlunosMatriculados.remove(umAluno)
+    }
 }
