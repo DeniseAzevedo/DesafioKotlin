@@ -3,8 +3,7 @@ package DesafioKotlin
 import java.util.*
 
 class Matricula(
-    var aluno: Aluno,
-    var curso: Curso,
-    dataMatricula: Date,
-) {
-}
+    var aluno: String,
+    var curso: String,
+    dataMatricula: Date
+)

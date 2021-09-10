@@ -2,8 +2,11 @@ package DesafioKotlin
 
 class Aluno(
     var nome: String,
-    var sobrenome: String,
-    var codigoAluno: Int,
+    var sobrenome: String
 ) {
-    // TODO: 07/09/2021 Parte A
+    constructor(
+        nome: String,
+        sobrenome: String,
+        codigoAluno: Int
+    ): this(nome, sobrenome)
 }
